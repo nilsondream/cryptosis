@@ -21,7 +21,7 @@ const Home = () => {
                 <div className='stats'>
                     <div className='item'>
                         <p>Criptomonedas totales</p>
-                        <span>{globalStats.total}</span>
+                        <span>{globalStats.totalCoins}</span>
                     </div>
                     <div className='item'>
                         <p>Capitalización total del mercado</p>
