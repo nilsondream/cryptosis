@@ -1,0 +1,112 @@
+.crypto-styled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .crypto-name {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+        }
+
+        span {
+            opacity: .5;
+        }
+    }
+
+    .crypto-price {
+
+        h1 {
+            font-size: 3rem;
+            padding: 25px 0;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            p {
+                opacity: .75;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .up {
+                color: var(--teal);
+            }
+
+            .down {
+                color: var(--red);
+            }
+        }
+    }
+
+    .crypto-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+        margin-top: 75px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            background: var(--black-2);
+            padding: 25px;
+            border-radius: var(--border-3);
+            transition: var(--transition);
+
+            span {
+                opacity: .5;
+            }
+
+            p {
+                font-size: x-large;
+            }
+
+            &:hover {
+                background: var(--black-3);
+                transition: var(--transition);
+            }
+        }
+    }
+
+    .crypto-description {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+        h5 {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            display: flex;
+            padding: 25px;
+            background: var(--black-2);
+            gap: 5px;
+
+            span {
+                opacity: .5;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

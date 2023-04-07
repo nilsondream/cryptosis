@@ -1,0 +1,95 @@
+.currencies-styled {
+
+    .currency-header {
+        margin-bottom: 25px;
+
+        h1 {
+            font-weight: 500;
+            margin-bottom: 50px;
+        }
+
+        p {
+            line-height: 24px;
+            opacity: .65;
+            margin-bottom: 50px;
+        }
+
+        .currency-search {
+            width: 75%;
+            display: flex;
+            align-items: center;
+            padding: 8px 14px;
+            outline: 1px solid var(--black-3);
+            border-radius: var(--border-2);
+            gap: 10px;
+    
+            input {
+                width: 100%;
+    
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .currency-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 17px 25px;
+            background: var(--black-1);
+            border-radius: var(--border-3);
+            transition: var(--transition);
+
+            .currency-left {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    object-fit: cover;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    span {
+                        opacity: .25;
+                        //font-weight: 500;
+                    }
+                }
+            }
+
+            .currency-right {
+                display: grid;
+                grid-template-columns: repeat(3, 60px);
+                text-align: center;
+                gap: 25px;
+
+                .up {
+                    color: var(--teal);
+                }
+
+                .down {
+                    color: var(--red);
+                }
+            }
+
+            &:hover {
+                transform: scale(1.075);
+                background: var(--black-2);
+                transition: var(--transition);
+            }
+        }
+    }
+}

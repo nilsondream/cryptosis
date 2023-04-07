@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Colfax';
+    src: url('../fonts/Colfax-Light.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Colfax';
+    src: url('../fonts/Colfax-Regular.otf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Colfax';
+    src: url('../fonts/Colfax-Medium.otf');
+    font-weight: 500;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --black-0: #000;
+    --black-1: #111;
+    --black-2: #222;
+    --black-3: #333;
+    --black-4: #444;
+    --black-5: #555;
+    --black-6: #666;
+    --black-7: #777;
+    --black-9: #999;
+
+    --white-0: #fff;
+    --white-1: #f5f5f5;
+    --white-2: #eee;
+    --white-3: #e5e5e5;
+    --white-4: #ddd;
+    --white-5: #d5d5d5;
+
+    --blue: #0078f2;
+    //--blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+
+    //gradient
+    --gradient-1: linear-gradient(135deg, var(--cyan), var(--indigo));
+    --gradient-2: linear-gradient(45deg, #A770EF, #CF8BF3, #FDB99B);
+    --gradient-3: linear-gradient(135deg, #FC5C7D, #6A82FB);
+    --gradient-4: linear-gradient(135deg, var(--teal), var(--green));
+    --gradient-5: linear-gradient(135deg, #B3FFAB, #12FFF7);
+    --gradient-6: linear-gradient(135deg, #434343, #212121);
+
+    //fonts
+    --ff-1: 'Inter', sans-serif;
+    --ff-2: 'Colfax';
+    //--ff-1: 'DM Sans', sans-serif;
+
+    //fonts sizes
+
+    //border radius
+    --border-0: 2px;
+    --border-1: 4px;
+    --border-2: 6px;
+    --border-3: 8px;
+    --border-4: 16px;
+    --border-5: 32px;
+    --border-6: 50px;
+
+    //transition
+    --transition: .3s ease;
+    --transition-2: .15s ease;
+
+    color-scheme: dark;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-family: var(--ff-2);
+    background: var(--black-0);
+    color: var(--white-0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    color: inherit;
+    border: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    background: transparent;
+}
+
+input {
+    color: inherit;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    background: transparent;
+}
+
+.layout-styled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .layout-container {
+        padding: 125px 0;
+        width: 720px;
+        max-width: 720px;
+    }
+}
+
+@import './Navbar.scss';
+@import './Home.scss';
+@import './Currencies.scss';
+@import './Crypto.scss';
+@import './Loader.scss';
+@import './Footer.scss';
