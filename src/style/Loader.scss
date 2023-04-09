@@ -1,9 +1,14 @@
-.loader-styled {
+.loader-styled, .premiun-styled {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     margin: -150px 0;
+
+    img {
+        width: 75%;
+        object-fit: cover;
+    }
 
     .loader {
         width: 48px;

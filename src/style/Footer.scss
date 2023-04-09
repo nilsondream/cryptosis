@@ -40,3 +40,16 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .footer-styled {
+        padding: 50px 16px;
+
+        .footer-container {
+            width: 100%;
+            max-width: unset;
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+    }
+}

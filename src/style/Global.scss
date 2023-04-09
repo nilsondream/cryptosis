@@ -149,6 +149,23 @@ input {
     }
 }
 
+.loader-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+    .layout-styled {
+        .layout-container {
+            padding: 125px 16px;
+            width: 100%;
+            max-width: unset;
+        }
+    }
+}
+
 @import './Navbar.scss';
 @import './Home.scss';
 @import './Currencies.scss';

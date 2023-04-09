@@ -41,3 +41,11 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .home-styled {
+        .stats {
+            grid-template-columns: 1fr;
+        }
+    }
+}

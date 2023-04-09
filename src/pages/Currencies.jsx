@@ -29,7 +29,7 @@ const Currencies = ({ simplified }) => {
                     <div className='currency-header'>
                         <h1>Criptomonedas</h1>
                         <div className='currency-search'>
-                            <MagnifyingGlass />
+                            <MagnifyingGlass size={25} />
                             <input
                                 type='search'
                                 placeholder='Buscar criptomoneda'
@@ -53,7 +53,7 @@ const Currencies = ({ simplified }) => {
                             </div>
                             <div className='currency-right'>
                                 <p>${millify(currency.price)}</p>
-                                <span className={currency.change > 0 ? 'up' : 'down'}>{currency.change}%</span>
+                                <p className={currency.change > 0 ? 'up' : 'down'}>{currency.change}%</p>
                                 <p>${millify(currency.marketCap)}</p>
                             </div>
                         </NavLink>

@@ -110,3 +110,17 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .crypto-styled {
+        .crypto-price {
+            h1 {
+                font-size: 2.25rem;
+            }
+        }
+
+        .crypto-stats {
+            grid-template-columns: 1fr;
+        }
+    }
+}
