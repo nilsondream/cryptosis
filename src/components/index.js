@@ -1,7 +1,6 @@
 export { default as Navbar } from './Navbar'
 export { default as Layout } from './Layout'
 export { default as Loader } from './Loader'
-export { default as Draw } from './draw.png'
 
 export const Logo = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="30px" viewBox="0 0 215.96 242.42">
